@@ -73,7 +73,7 @@ CPPFLAGS="-I$PREFIX/include -arch x86_64" LDFLAGS="-L$PREFIX/lib -arch x86_64 -W
 CXXFLAGS="-arch x86_64 -I/usr/local/Cellar/gcc\@8/8.3.0/include/c++/8.3.0/ -fwrapv -fno-strict-aliasing -Wno-builtin-declaration-mismatch -Werror -Wno-error=attributes -g -Wl,-undefined -Wl,dynamic_lookup" \
 ./configure --prefix="${PREFIX}" --with-gui=no "$HARDENING_ARG" "$LCOV_ARG" "$CONFIGURE_FLAGS" "$WEBSOCKETS_ARG"  "$DEBUGGING_ARG" \
   --with-custom-bin=yes CUSTOM_BIN_NAME=grms CUSTOM_BRAND_NAME=GRMS \
-  CUSTOM_SERVER_ARGS="'-ac_name=GRMS -ac_supply=100000 -ac_reward=1200000000,900000000,500000000 -ac_end=180700,900000,3600000 -ac_algo=verushash -ac_adaptivepow=6 -ac_eras=3 -ac_blocktime=30 -ac_veruspos=50 -ac_cbmaturity=3 -ac_cc=333 -ac_sapling=1 -addnode=91.231.187.163 -addnode=91.231.187.130 -addnode=91.231.187.105 -addnode=91.231.187.20 -addnode=91.231.187.113 -addnode=91.231.187.115 -addnode=91.231.187.116 -addnode=91.231.187.120 -nspv_msg=1'" \
+  CUSTOM_SERVER_ARGS="'-ac_name=GRMS -ac_supply=100000 -ac_reward=1200000000,900000000,10000000 -ac_end=180700,900000,3600000 -ac_algo=verushash -ac_adaptivepow=6 -ac_eras=3 -ac_blocktime=30 -ac_veruspos=50 -ac_cbmaturity=3 -ac_cc=333 -ac_sapling=1 -addnode=91.231.187.163 -addnode=91.231.187.130 -addnode=91.231.187.105 -addnode=91.231.187.20 -addnode=91.231.187.113 -addnode=91.231.187.115 -addnode=91.231.187.116 -addnode=91.231.187.120 -nspv_msg=1'" \
   CUSTOM_CLIENT_ARGS='-ac_name=GRMS'
 
 make "$@" V=1 NO_GTEST=1 STATIC=1 
